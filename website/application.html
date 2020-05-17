@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <title>热热CMS</title>
+    <link rel="stylesheet" href="./files/layui.css" media="all">
+    <link rel="stylesheet" href="./files/global.css" media="all">
+    <link id="layuicss-skincodecss" rel="stylesheet" href="./files/code.css" media="all">
+    <link id="layuicss-layer" rel="stylesheet" href="./files/layer.css" media="all">
+    <link rel="icon" href="http://img.alicdn.com/tps/TB1HwXxLpXXXXchapXXXXXXXXXX-32-32.ico" type="image/x-icon">
+
+    <script src="./files/layui.js" charset="utf-8"></script>
+    <script src="./files/jquery.min.js"></script>
+    <script src="./files/global.js" charset="utf-8"></script>
+    <script src="./files/lay/modules/form.js" charset="utf-8"></script>
+    <script src="./files/lay/modules/layer.js" charset="utf-8"></script>
+    <style>
+        img{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+        <div class="layui-header header header-index">
+        <div class="layui-main">
+            <a class="logo" href="./index.html">热热CMS</a>
+            <div class="layui-form component">
+            </div>
+            <ul class="layui-nav">
+                <li class="layui-nav-item">
+                    <a href="./index.html">首页</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="./experience.html">体验</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="./application.html">申请</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="./doc.html">文档</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="./add_group.html">加群</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="http://agent.997kj.com">登录后台</a>
+                </li>
+                <span class="layui-nav-bar" style="left: 248.563px; top: 55px; width: 0px; opacity: 0;"></span>
+      </ul>
+        </div>
+    </div>
+    <ul class="site-dir">
+        <li>
+            <a href="/doc.html">
+                <cite>兼容性和面向场景</cite>
+            </a>
+        </li>
+        <li>
+            <a href="/">
+                <cite>获取源码下载</cite>
+            </a>
+        </li>
+    </ul>
+        <div class="layui-main site-inline">
+            <div class="site-tree">
+                <ul class="layui-tree">
+                    <li>
+                        <h2>加盟申请</h2></li>
+                    <li class="site-tree-noicon layui-this">
+                        <a href="./application.html">
+                            <cite>申请代理商账号</cite>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="site-content" style="display:inline-block;">
+
+                <fieldset class="layui-elem-field layui-field-title site-title">
+                    <legend><a name="compatibility">申请代理商账号</a></legend>
+                </fieldset>
+
+                <form class="layui-form" onclick="return false">
+                <div class="layui-form-item">
+                    <label class="layui-form-label"><span style="color: crimson;font-size: 1rem">*</span>商户名称</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="merchant_name" required  lay-verify="required" placeholder="请输入您的商户名称" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+
+                    <div class="layui-form-item">
+                    <label class="layui-form-label"><span style="color: crimson;font-size: 1rem">*</span>联系方式</label>
+                    <div class="layui-input-block">
+                        <input type="radio" name="tel_type" value="qq" title="QQ" checked>
+                        <input type="radio" name="tel_type" value="we_chat" title="微信">
+                        <input type="radio" name="tel_type" value="email" title="邮箱">
+                        <input type="radio" name="tel_type" value="mobile" title="手机号">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label"></label>
+                    <div class="layui-input-block">
+                        <input type="text" name="contact" required   lay-verify="required" placeholder="请输入您的联系方式" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label"><span style="color: crimson;font-size: 1rem">*</span>设置账号</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="username"  required  lay-verify="required" placeholder="请设置代理商管理后台账号" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label"><span style="color: crimson;font-size: 1rem">*</span>设置密码</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="password" required   lay-verify="required" placeholder="请设置登录密码" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <button class="layui-btn" id="apply_id" onclick="applyFn()">确认申请</button>
+                    </div>
+                </div>
+            </form>
+            </div>
+      </div>
+
+       <div class="layui-footer footer footer-index">
+            <div class="layui-main">
+                <p>© 2020  <a href="/">rerecms.com</a>热热CMS</p>
+                <p>
+                    声明：请在遵守法律的前提下使用本站软件，对用户在使用过程中的信息内容本站不负任何责任！
+                </p>
+            </div>
+        </div>
+    <div class="site-tree-mobile layui-hide">
+        <i class="layui-icon"></i>
+    </div>
+        <script type="text/javascript">
+            $(function(){
+                $(".site-tree .site-tree-noicon").click(function(){
+                    var sindex = $(this).index();
+                    $(this).addClass("layui-this").siblings("li").removeClass("layui-this");
+                    $(".site-content").hide();
+                    $(".site-content").eq(sindex-1).css("display","inline-block");
+                })
+            })
+        </script>
+        <div class="site-mobile-shade"></div>
+
+        <script>
+            localStorage.clear();
+        // layui.use(['form'],function () {
+        //     var form=layui.form;
+        //     form.on('submit(apply_id)',function () {
+        //       var formData = data.field;
+        //         $.ajax({
+        //             url:'http://vapi.sskk168.com/v1/register',
+        //             type:'POST',
+        //             data:formData,
+        //             success:function (messages) {
+        //                 saveData();
+        //                 window.location.href="./application_success.html";
+        //             }
+        //         })
+        //         // return false;
+        //     });
+        // })
+    function  applyFn() {
+        var merchant_nameValue = $(" input[ name='merchant_name' ] ").val();
+        var typeValue = $('input[ name="tel_type" ]:checked').val();
+        var contactValue = $(" input[ name='contact' ] ").val();
+        var usernameValue = $(" input[ name='username' ] ").val();
+        var passwordValue = $(" input[ name='password' ] ").val();
+
+        if(merchant_nameValue==''){
+            layer.msg("请输入您的商户名称");
+            return false;
+        }else if(contactValue==""){
+            layer.msg("请输入您的联系方式")
+            return false;
+        }else if(usernameValue==""){
+            layer.msg("请设置代理商管理后台账号")
+            return false;
+        }else if(passwordValue==""){
+            layer.msg("请设置登录密码")
+            return false;
+        }else {
+            var list={
+                "merchant_name":  merchant_nameValue,
+                "type":typeValue,
+                "contact": contactValue,
+                "username":usernameValue,
+                "password":passwordValue,
+            }
+            $.ajax({
+                url:'http://vapi.sskk168.com/v1/register',
+                data : list,
+                type:'POST',
+                dataType:'json',
+                success : function(result) {
+                    if(result.code=='200'){
+                        layer.msg(result.messages);
+                        localStorage.setItem('merchant_name',merchant_nameValue);
+                        localStorage.setItem('type',typeValue);
+                        localStorage.setItem('contact',contactValue);
+                        localStorage.setItem('username',usernameValue);
+                        localStorage.setItem('password',passwordValue);
+                        window.location.href="./application_success.html";
+                    }else if(result.code=='400'){
+                        layer.msg(result.messages);
+                    }else{
+                        layer.msg(result.messages);
+                    }
+                },
+                error:function () {
+                    layer.msg("服务器错误");
+                }
+            });
+        }
+        event.preventDefault()
+    }
+    </script>
+    <ul class="layui-fixbar">
+        <li class="layui-icon layui-fixbar-top" lay-type="top" style="display: none;"></li>
+    </ul>
+  </body>
+</html>
